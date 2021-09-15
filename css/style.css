@@ -1,15 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 :root {
   --body-bg: #fafafa;
-  --body-color: #555;
+  --body-title: #151F39;
+  --body-subtitle: #383e44;
+  --body-box: #fff;
 }
 
 .dark-mod:root {
   --body-bg: #212529;
   --body-color: #899095;
+  --body-box: #fff;
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: Arial, monospace;
   min-height: 400px;
   background-color: var(--body-bg);
   background-size: 80vh;
@@ -21,20 +30,53 @@ body {
   text-align: center;
   padding: 20px;
   height: 100vh;
+  position: relative;
+}
+
+.faixa {
+  background-color: #151F39;
+  height: 80px;
+}
+
+.caixa {
+  padding: 40px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  width: 45vw;
+  height: 90vh;
+  margin: -75px auto 0 auto ;
+  background-color: var(--body-box);
+  box-shadow: 3px 3px 15px rgba(15, 15, 15, 0.300);
 }
 
 .page-title {
-  color: var(--body-color);
-  margin: 0 0 5px;
+  font-size: 42px;
+  color: var(--body-title);
+  margin: 0 0 25px;
 }
 
 .page-subtitle {
-  color: var(--body-color);
-  margin-top: 5px;
+  font-size: 22px;
+  color: var(--body-subtitle);
+  margin-bottom: 50px;
 }
 
 .page-logo {
   width: 200px;
 }
 
+label {
+  color: #fff;
+  background-color: #151F39;
+  padding: 11px 0px 12px 15px;
+  font-size: 16px;
+}
+
+input {
+  border: 1px solid var(--body-title);
+  padding: 10px 0px 10px 5px;
+  margin-left: 10px;
+  font-size: 16px;
+}
 
