@@ -2,9 +2,9 @@
 const html = document.querySelector("html");
 const checkbox = document.querySelector("#switch");
 
-checkbox.addEventListener("change", function () {
-  html.classList.toggle("dark-mod");
-});
+// checkbox.addEventListener("change", function () {
+//   html.classList.toggle("dark-mod");
+// });
 
 // Script
 const calcular = document.querySelector(".calcular");
@@ -19,9 +19,9 @@ function calculo() {
 
   if (nota1 && nota2 && nota3 && nota4 !== "") {
     if (resultadoFinal >= 7 && resultadoFinal <= 10) {
-      resultado.textContent = `Você foi APROVADO! Sua nota final é ${resultadoFinal.toFixed(2)}.`;
+      resultado.textContent = `A sua média é ${resultadoFinal.toFixed(2)}. Parabéns você passou!`;
     } else {
-      resultado.textContent = `Você foi REPROVADO! Sua nota final é ${resultadoFinal.toFixed(2)}.`;
+      resultado.textContent = `A sua média é ${resultadoFinal.toFixed(2)}. Infelizmente você não passou!`;
     }
   } else {
     resultado.textContent = "Preencha todos os valores!";
