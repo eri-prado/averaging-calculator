@@ -1,2 +1,2 @@
-# calculadora-de-media
- Calculadora que dar a média das notas de um aluno.
+# averaging-calculator
+Calculator that averages a student's grades, developed in HTML, CSS & JavaScript.
